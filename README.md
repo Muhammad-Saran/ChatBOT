@@ -1,6 +1,6 @@
 # Simple Chatbot in PyTorch
 
-This repository contains a simple chatbot implementation using PyTorch. The chatbot is trained on predefined intents and responses, allowing it to recognize patterns and reply accordingly.
+This repository contains a simple chatbot implementation using PyTorch. The chatbot is trained on predefined intents and responses, allowing it to recognize patterns and reply accordingly. A graphical user interface (GUI) has been added to enhance user interaction.
 
 ## Installation
 
@@ -30,6 +30,7 @@ Install PyTorch and required libraries:
 ```sh
 pip install torch torchvision torchaudio
 pip install nltk
+pip install tkinter
 ```
 
 If you encounter issues related to NLTK, install `punkt`:
@@ -46,10 +47,10 @@ python train.py
 ```
 This will generate a `data.pth` file, which contains the trained model weights.
 
-### Test the Chatbot
-To interact with the chatbot, run:
+### Run the Chatbot GUI
+After training, launch the chatbot's graphical interface:
 ```sh
-python chat.py
+python app.py
 ```
 
 ## Customization
@@ -80,7 +81,7 @@ After modifying `intents.json`, re-run `train.py` to update the model.
 
 ## About
 
-This chatbot uses a feedforward neural network with two hidden layers. It is designed for easy customization and can be extended for different use cases.
+This chatbot uses a feedforward neural network with two hidden layers. It is designed for easy customization and can be extended for different use cases. The addition of a GUI provides a more interactive and user-friendly experience.
 
 Feel free to contribute and enhance the chatbot!
 
